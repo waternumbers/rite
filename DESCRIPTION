@@ -1,5 +1,5 @@
 Package: rite
-Version: 0.3.7
+Version: 0.999
 Date: 2016-08-18
 Title: The Right Editor to Write R
 Authors@R: c(person("Thomas J.", "Leeper",
