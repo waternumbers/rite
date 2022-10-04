@@ -15,4 +15,3 @@ Thomas J. Leeper
 Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
 }
 \keyword{package}
-

@@ -4,7 +4,7 @@ editkeypress <- function(where, direction = 'right'){
 }
 
 editModified <- function(where){
-    scriptSaved <<- FALSE
+    scriptSaved <- FALSE
     tkwm.title(riteenv$editor, paste("*",riteenv$wmtitle))
     editkeypress(where)
 }

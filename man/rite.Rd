@@ -5,10 +5,23 @@
 \alias{riteout}
 \title{rite}
 \usage{
-rite(filename = NULL, catchOutput = FALSE, evalenv = .GlobalEnv,
-  fontFamily = "Courier", fontSize = 10, orientation = "horizontal",
-  fastinsert = FALSE, highlight = "r", color = NULL, autosave = TRUE,
-  echo = TRUE, tab = "    ", comment = "#", url = NULL, ...)
+rite(
+  filename = NULL,
+  catchOutput = FALSE,
+  evalenv = .GlobalEnv,
+  fontFamily = "Courier",
+  fontSize = 10,
+  orientation = "horizontal",
+  fastinsert = FALSE,
+  highlight = "r",
+  color = NULL,
+  autosave = TRUE,
+  echo = TRUE,
+  tab = "    ",
+  comment = "#",
+  url = NULL,
+  ...
+)
 
 riteout(catchOutput = TRUE, ...)
 }
@@ -190,6 +203,7 @@ The following tools are available:
 
 \code{LaTeX} and \code{XeLaTeX}: Run LaTeX or XeLaTeX and, optionally, BibTex as a system call. knitr compiles LaTeX to PDF via DVI using the functionality supplied by the \code{tools} package, so these report generation tools provide functionality for .tex scripts that are not compatible with DVI.
 }
+
 \examples{
 \dontrun{
 # run the simple script editor
@@ -205,4 +219,3 @@ riteout()
 Thomas J. Leeper
 }
 \keyword{IO}
-

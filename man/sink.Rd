@@ -5,11 +5,20 @@
 \alias{sinkstop}
 \title{ritesink}
 \usage{
-sinkstart(echo = TRUE, print.eval = TRUE, split = FALSE,
-  prompt.echo = getOption("prompt", "> "), fontFamily = "Courier",
-  fontSize = 10, col.bg = "white", col.call = c("black", col.bg),
-  col.result = c("black", col.bg), col.err = c("red", col.bg),
-  col.warn = c("purple", col.bg), col.msg = c("blue", col.bg))
+sinkstart(
+  echo = TRUE,
+  print.eval = TRUE,
+  split = FALSE,
+  prompt.echo = getOption("prompt", "> "),
+  fontFamily = "Courier",
+  fontSize = 10,
+  col.bg = "white",
+  col.call = c("black", col.bg),
+  col.result = c("black", col.bg),
+  col.err = c("red", col.bg),
+  col.warn = c("purple", col.bg),
+  col.msg = c("blue", col.bg)
+)
 
 sinkstop(quiet = TRUE)
 }
@@ -65,19 +74,19 @@ These functions make use of a couple of different R features to build a color-co
 
   \code{<Ctrl-l>}: Clear output
 }
+
 \examples{
 \dontrun{
 sinkstart() # open the sink
 sinkstop() # close the sink
 }
 }
-\author{
-Thomas J. Leeper
-}
 \references{
 \href{http://developer.r-project.org/TaskHandlers.pdf}{Top-level Task Callbacks in R}
 
 \href{http://cran.r-project.org/web/packages/R2HTML/index.html}{R2HTML package}
 }
+\author{
+Thomas J. Leeper
+}
 \keyword{IO}
-

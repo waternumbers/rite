@@ -9,7 +9,7 @@ hl <- function(where, type, name = NULL, color, pattern){
     } else if (type == 'chars') {
         .Tcl(paste('ctext::addHighlightClassForSpecialChars ',.Tk.ID(where), name, color, pattern))
     }
-    retrun()
+    return()
 }
     
 
